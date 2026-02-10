@@ -28,6 +28,11 @@ st.markdown(
 # leer los datos
 car_data = pd.read_csv('vehicles_us.csv')
 
+# tabla introductoria
+st.header("Muestra de datos de anuncios de coches")
+st.write("Aquí tienes una vista previa de los datos cargados (primeras filas):")
+st.dataframe(car_data.head())
+
 # crear casillas de verificación
 build_histogram = st.checkbox('Construir histograma')
 build_scatter = st.checkbox('Construir gráfico de dispersión')
