@@ -7,6 +7,13 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+# configuración básica de la página
+st.set_page_config(
+    page_title="Car Sales EDA",
+    layout="wide"
+)
+
+
 # leer los datos
 car_data = pd.read_csv('vehicles_us.csv')
 
