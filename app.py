@@ -13,6 +13,17 @@ st.set_page_config(
     layout="wide"
 )
 
+# ---------- TEXTO PRINCIPAL ----------
+st.title("Exploratory Data Analysis – Car Sales Dataset")
+
+st.markdown(
+    """
+    ### Esta aplicación permite explorar de forma interactiva un conjunto de datos
+    ### de anuncios de venta de coches en EE.UU.
+    
+    #### Usa las siguientes casillas para visualizar distintas relaciones y distribuciones.
+    """
+)
 
 # leer los datos
 car_data = pd.read_csv('vehicles_us.csv')
@@ -20,6 +31,7 @@ car_data = pd.read_csv('vehicles_us.csv')
 # crear casillas de verificación
 build_histogram = st.checkbox('Construir histograma')
 build_scatter = st.checkbox('Construir gráfico de dispersión')
+build_subburst = st.checkbox('Constuir un gráfico sunburst')
 
 # histograma
 if build_histogram:
