@@ -31,7 +31,7 @@ car_data = pd.read_csv('vehicles_us.csv')
 # crear casillas de verificación
 build_histogram = st.checkbox('Construir histograma')
 build_scatter = st.checkbox('Construir gráfico de dispersión')
-build_subburst = st.checkbox('Constuir un gráfico sunburst')
+build_sunburst = st.checkbox('Constuir un gráfico sunburst')
 
 # histograma
 if build_histogram:
@@ -56,4 +56,15 @@ if build_scatter:
         y='price'
     )
 
+    st.plotly_chart(fig, use_container_width=True)
+
+# ---------- SUNBURST ----------
+if build_sunburst:
+    st.subheader("Composición de los vehículos")
+
+    fig = px.sunburst(
+        car_data,
+        path=["type", "fuel", "transmission"],
+        title="Tipo → Combustible → Transmisión"
+    )
     st.plotly_chart(fig, use_container_width=True)
