@@ -21,3 +21,29 @@ La herramienta está pensada para que cualquier usuario, sin necesidad de experi
 ## 🎓 Contexto
 
 Este proyecto fue desarrollado como parte de los requisitos prácticos del bootcamp de Data Analytics de **TripleTen**. Su objetivo es demostrar el dominio en la creación de aplicaciones web para el análisis de datos utilizando Python y librerías modernas de visualización.
+
+
+
+# 🚗 Exploratory Data Analysis: Car Sales
+
+[![Deployed on Render](https://img.shields.io/badge/Status-Live-success)](https://cars-project-kjw3.onrender.com/)
+
+**Author:** Fernando Gutiérrez Canales  
+**Date:** February 2026  
+**Live Application:** [Web App on Render](https://cars-project-kjw3.onrender.com/)
+
+## 📖 Project Overview
+
+This repository contains the source code for an interactive web application designed to perform an Exploratory Data Analysis (EDA) on a dataset of car sales advertisements in the United States. 
+
+The tool is built so that any user, regardless of their technical background, can easily explore the data and draw initial conclusions about automotive market trends in a highly visual and intuitive way.
+
+## ✨ Features
+
+* **Interactive Interface:** User-friendly controls that allow users to manipulate data visualizations on the fly.
+* **Data Visualization:** Dynamic charts (histograms, scatter plots, etc.) that make it easy to understand data distributions and correlations.
+* **Cloud Deployment:** A fully functional application accessible online, deployed via Render.
+
+## 🎓 Context
+
+This project was developed as part of the practical curriculum for the **TripleTen** Data Analytics Bootcamp. Its purpose is to demonstrate proficiency in building data-centric web applications using Python and modern data visualization libraries.
